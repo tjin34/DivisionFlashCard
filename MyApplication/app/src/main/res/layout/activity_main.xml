@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sh1nji.tenmathquestions.MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flash_card"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of problem: "
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/btn_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:id="@+id/btn_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"/>
+
+            <RadioButton
+                android:id="@+id/btn_twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="20dp"/>
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_bg_button"
+            android:text="@string/begin"
+            android:textColor="@color/tv_normal"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

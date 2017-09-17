@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TenMathQuestions</string>
+
+    <string name="flash_card">Number Division Flash Card</string>
+    <string name="begin">Start</string>
+    <string name="setting">Settings</string>
+
+    <string name="your_answer">Your Answer: </string>
+
+    <string name="submit_next">Submit and Next</string>
+
+    <string name="show_report">Show Report</string>
+    
+    <string name="divide">÷</string>
+    <string name="multiply">×</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+</resources>

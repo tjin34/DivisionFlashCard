@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_back_black"
+            android:padding="8dp"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_numNow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_numTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="10"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_submitAndNext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_bg_next_button"
+        android:text="@string/submit_next"
+        android:textColor="@color/tv_normal"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/btn_submitAndNext"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/questionBar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_round_shape"
+            android:layout_below="@id/header">
+
+            <TextView
+                android:id="@+id/tv_numerator"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="99"
+                android:textColor="@color/tv_normal"
+                android:textSize="80sp"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+
+            <TextView
+                android:id="@+id/tv_denominator"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="11"
+                android:textColor="@color/tv_normal"
+                android:textSize="80sp"
+                android:gravity="right|center_vertical"
+                android:layout_below="@id/tv_numerator"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+
+            <TextView
+                android:id="@+id/tv_mathMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:text="@string/divide"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/tv_normal"
+                android:textSize="80sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/answerBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/questionBar">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="@string/your_answer"
+                android:textColor="@color/tv_normal"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_answer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="40sp"
+                android:paddingRight="40dp"
+                android:inputType="number"
+                android:textColor="@color/tv_normal"
+                android:gravity="right|center_vertical"
+                android:background="@drawable/bg_round_shape"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
